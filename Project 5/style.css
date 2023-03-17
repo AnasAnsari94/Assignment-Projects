@@ -1,0 +1,148 @@
+body {
+    height: 100vh;
+    background-color: aquamarine;
+}
+
+h1 {
+    font-size: 70px;
+    text-align: center;
+}
+
+.monitor, .laptop, .tablet, .mobile {
+    text-align: center;
+    font-size: 50px;
+    display: none;
+}
+
+/* Media Queries */
+
+
+/* Media Queries with Max-width */
+/* 
+@media screen and (max-width: 1440px) {
+    body{
+        background-color: forestgreen;
+    }
+
+    .monitor {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    body {
+        background-color: darkgoldenrod;
+    }
+    .monitor {
+        display: none;
+    }
+    .laptop {
+        display: block;
+    }
+}
+
+@media screen and (max-widht: 768px) {
+    body {
+        background-color: aqua;
+    }
+
+    .monitor {
+        display: none;
+    }
+
+    .laptop {
+        display: none;
+    }
+
+    .tablet {
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    body {
+        background-color: crimson;
+    }
+
+    .monitor {
+        display: none;
+    }
+    .laptop {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+    .mobile {
+        display: block;
+    }
+} */
+
+
+/* We can also achieve it with min-width property and min-width and max-width with both we can easily achieve it  */
+
+
+/* Media Queries With min-width  */
+
+@media screen and (min-width: 425px) {
+    body{
+        background-color: chartreuse;
+    }
+    .mobile {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-color: chocolate;
+    }
+
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    body {
+        background-color: darkcyan;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .tablet {
+        display: none;
+    }
+
+    .laptop {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    body {
+        background-color: yellowgreen;
+    }
+
+    .mobile {
+        display: none;
+    }
+    .tablet {
+        display: none;
+    }
+    .laptop {
+        display: none;
+    }
+    .monitor {
+        display: block;
+    }
+}
